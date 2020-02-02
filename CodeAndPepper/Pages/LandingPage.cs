@@ -1,11 +1,10 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using CodePepper.Pages;
-using CodeAndPepper.Pages;
-using TechTalk.SpecFlow;
 using OpenQA.Selenium.Support.UI;
 using System;
 using SeleniumExtras.WaitHelpers;
+using OpenQA.Selenium.Interactions;
 
 namespace CodePepper
 {
@@ -29,8 +28,6 @@ namespace CodePepper
         [FindsBy(How = How.CssSelector, Using = "#container-main-block > div.body-home > div.first-screen.first-screen--main > div > div.first-screen__container.first-screen__container--main > div > h1")]
         private IWebElement welcomeMsg { get; set; }
 
-        //*[@id="container-main-block"]/div[1]/div[1]/div/div[1]/div/h1
-        //*[@id="container-main-block"]/div[1]/div[1]/div/div[1]/div/h1
         #endregion
         public LandingPage(IWebDriver driver) : base(driver)
         {
@@ -39,12 +36,14 @@ namespace CodePepper
 
         public void ClickSingleTripCover()
         {
-            singleTripCover.Click();
+            Actions action = new Actions(_driver);
+            action.Click(singleTripCover).Perform();
         }
 
         public void ClickBurgerMenu()
         {
-            burgerMenu.Click();
+            Actions action = new Actions(_driver);
+            action.Click(burgerMenu).Perform();
         }
 
         public void ClickReturnHome()

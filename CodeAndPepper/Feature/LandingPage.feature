@@ -6,7 +6,7 @@ Scenario: Landing Page
 		Then I'm on correct "https://pluto-customer-web-app-staging.herokuapp.com/tailored-annual-or-single" page
 
 @ui @smoke
-Scenario: Going back to landing page
+Scenario: Welcome Message
 		Given I open application
 		Then I click Single Trip cover
 		Then I click burger menu

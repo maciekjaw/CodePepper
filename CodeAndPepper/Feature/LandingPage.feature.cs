@@ -133,16 +133,16 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Going back to landing page")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Welcome Message")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "LandingPage")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("ui")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("smoke")]
-        public virtual void GoingBackToLandingPage()
+        public virtual void WelcomeMessage()
         {
             string[] tagsOfScenario = new string[] {
                     "ui",
                     "smoke"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Going back to landing page", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Welcome Message", null, new string[] {
                         "ui",
                         "smoke"});
 #line 9

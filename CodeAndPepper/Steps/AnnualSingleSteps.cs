@@ -1,7 +1,5 @@
 ﻿using TechTalk.SpecFlow;
 using CodeAndPepper.Pages;
-using CodePepper.Pages;
-using OpenQA.Selenium;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CodeAndPepper.Steps

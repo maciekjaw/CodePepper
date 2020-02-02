@@ -18,9 +18,9 @@ namespace CodePepper.Steps
             var basePage = new BaseTest(applicationUrl);
             basePage.TestSetup();
             var loginPage = new LandingPage(basePage.driver);
+            var annualSinglePage = new AnnualSinglePage(basePage.driver);
             ScenarioContext.Current.Set(loginPage);
             ScenarioContext.Current.Set(basePage);
-            var annualSinglePage = new AnnualSinglePage(basePage.driver);
             ScenarioContext.Current.Set(annualSinglePage);
         }
 

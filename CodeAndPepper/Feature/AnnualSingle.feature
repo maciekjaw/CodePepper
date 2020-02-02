@@ -1,9 +1,7 @@
 ﻿Feature: AnnualSingle
-	As a user
-	I want to be able to add my partner
 
 @ui @smoke
-Scenario: Next Btn AAvailability
+Scenario: Next Btn Availability
 		Given I open application
 		Then I click Single Trip cover
 		Then I check if Next button is disable

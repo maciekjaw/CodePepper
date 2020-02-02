@@ -29,36 +29,6 @@ namespace CodePepper.Tests
             driver.Manage().Window.Maximize();
         }
 
-        public void TurnOnScriptDefaultWait()
-        {
-            driver.Manage().Timeouts().PageLoad = timeToWait;
-        }
-
-        public void TurnOnPageDefaultWait()
-        {
-            driver.Manage().Timeouts().PageLoad = timeToWait;
-        }
-
-        public void TurnOnElementDefaultWait()
-        {
-            driver.Manage().Timeouts().ImplicitWait = TimeToWait;
-        }
-
-        public void SetMinScriptWait()
-        {
-            driver.Manage().Timeouts().PageLoad = timeToWait;
-        }
-
-        public void SetMinPageWait()
-        {
-            driver.Manage().Timeouts().PageLoad = timeToWait;
-        }
-
-        public void SetMinElementWait()
-        {
-            driver.Manage().Timeouts().ImplicitWait = TimeToWait;
-        }
-
         private void Initialize(string url)
         {
             _url = url;
@@ -74,11 +44,6 @@ namespace CodePepper.Tests
         public void TestCleanUp()
         {
             driver.Close();
-        }
-
-        public void OpenPage(string url)
-        {
-            driver.Navigate().GoToUrl(url);
         }
 
     }
